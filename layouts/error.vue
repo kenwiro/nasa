@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <h1 v-if="error.statusCode === 404">
       {{ pageNotFound }}
     </h1>
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+
 export default {
   layout: 'empty',
   props: {
@@ -35,10 +36,5 @@ export default {
     }
   }
 }
-</script>
 
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-</style>
+</script>
